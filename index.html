@@ -144,7 +144,7 @@
             <transition name="into">
                 <div id="main" v-show="!loading">
                     <div id="home-head">
-    <div id="home-background" ref="homeBackground" data-images="/images/bg/1.png,/images/bg/2.png,/images/bg/3.jpg,/images/bg/4.jpg,/images/bg/5.png,/images/bg/6.png,/images/bg/7.png,/images/bg/8.png,/images/bg/9.png,/images/bg/10.png,/images/bg/11.png,/images/bg/12.png,/images/bg/13.png,/images/bg/14.jpg,/images/bg/15.png,/images/bg/16.jpg,/images/bg/17.png"></div>
+    <div id="home-background" ref="homeBackground" data-images="/images/bg/1.png,/images/bg/2.png,/images/bg/3.jpg,/images/bg/4.jpg,/images/bg/5.png,/images/bg/6.png,/images/bg/7.png,/images/bg/8.png,/images/bg/9.png,/images/bg/10.png,/images/bg/11.png,/images/bg/12.png,/images/bg/13.png,/images/bg/14.jpg,/images/bg/15.png,/images/bg/16.jpg,/images/bg/17.png,/images/bg/18.jpg,/images/bg/19.png,/images/bg/20.jpg,/images/bg/21.jpg,/images/bg/22.png,/images/bg/23.jpg,/images/bg/24.jpg,/images/bg/25.jpg"></div>
     <div id="home-info" @click="homeClick">
         <span class="loop"></span>
         <span class="loop"></span>
@@ -192,6 +192,16 @@
 </code></pre>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
+</code></pre>
+<pre><code class="bash">$ hexo deploy
+$hexo new &quot;name&quot;       # 新建文章
+$hexo new page &quot;name&quot;  # 新建页面
+$hexo g                # 生成页面
+$hexo d                # 部署
+$hexo s                # 本地预览
+$hexo clean            # 清除缓存和已生成的静态文件
+$hexo help             # 帮助
+$hexo g -d             # 生成页面并部署
 </code></pre>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
