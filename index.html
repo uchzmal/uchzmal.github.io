@@ -136,6 +136,59 @@
         
 
 <div class="post">
+    <a href="/2023/06/18/%E9%9B%B7%E7%94%B5%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%8E%BB%E5%B9%BF%E5%91%8A%E6%95%99%E7%A8%8B/">
+        <h2 class="post-title">雷电模拟器去广告教程</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/6/18
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <h2 id="废话不多说直接开搞"><a href="#废话不多说直接开搞" class="headerlink" title="废话不多说直接开搞"></a>废话不多说直接开搞</h2><h3 id="首先我们找到"><a href="#首先我们找到" class="headerlink" title="首先我们找到"></a>首先我们找到</h3><pre><code>C:\Users\Administrator\AppData\Roaming\
+</code></pre>
+<p>这个路径<br>我现在用的版本后面接的是leidian9，也就是C:\Users\Administrator\AppData\Roaming\leidian9<br>后面这一点点取决于你安装的版本</p>
+<p>我们进到这个目录</p>
+<img src="/2023/06/18/%E9%9B%B7%E7%94%B5%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%8E%BB%E5%B9%BF%E5%91%8A%E6%95%99%E7%A8%8B/0.png" class="">
+<p>这里有2种办法</p>
+<p>一：无名文件替换。就是直接把这个文件夹删掉，新建一个cache.txt文件。然后把.txt删掉，<br>无视这个提示<img src="/2023/06/18/%E9%9B%B7%E7%94%B5%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%8E%BB%E5%B9%BF%E5%91%8A%E6%95%99%E7%A8%8B/1.png" class=""><br>二：图片替换。我们进去这个目录<img src="/2023/06/18/%E9%9B%B7%E7%94%B5%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%8E%BB%E5%B9%BF%E5%91%8A%E6%95%99%E7%A8%8B/2.png" class="">可以很清晰的看到三个图片，<br>找3个图片把它们替换掉，直接把广告变成美化！</p>
+<h3 id="host"><a href="#host" class="headerlink" title="host"></a>host</h3><p>host可以把联机加载的广告嘎调<br>host文件路径：C:\Windows\System32\drivers\etc\hosts<br>这里我就不带大家找了。<br>只要在host文件最后面加上这些就行</p>
+<pre><code>127.0.0.1 res.ldmnq.com
+127.0.0.1 ldmnq.com
+127.0.0.1 ldapi.ldmnq.com
+127.0.0.1 api.ldmnq.com
+127.0.0.1 mnqlog.ldmnq.com
+127.0.0.1 appstore.ldmnq.com
+</code></pre>
+<h3 id="系统桌面"><a href="#系统桌面" class="headerlink" title="系统桌面"></a>系统桌面</h3><p>众所周知雷电模拟器的桌面也是有广告的，<br>所以直接把它扬了！<br>这里推荐你用 <a target="_blank" rel="noopener" href="https://app.emotn.com/ui">Emotn UI</a><br>先把Emotn UI装上去<br>把<a target="_blank" rel="noopener" href="https://wwn.lanzout.com/ikGFz0zf674d">adb</a> 下好解压<br>在你解压的目录的地址栏输入cmd，然后回车</p>
+<img src="/2023/06/18/%E9%9B%B7%E7%94%B5%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%8E%BB%E5%B9%BF%E5%91%8A%E6%95%99%E7%A8%8B/3.png" class="">
+<p>在cmd里面依次输入</p>
+<pre><code class="卸载系统桌面">adb uninstall com.android.launcher3
+</code></pre>
+<pre><code class="卸载雷电游戏中心">adb uninstall com.readboy.parentmanager
+</code></pre>
+<p>那我知道的就这么多了</p>
+<p>如果你还有更好的方法，欢迎和我交流！</p>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        
+    </div>
+    <a href="/2023/06/18/%E9%9B%B7%E7%94%B5%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%8E%BB%E5%B9%BF%E5%91%8A%E6%95%99%E7%A8%8B/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
     <a href="/2023/06/16/366%E5%B9%B4/">
         <h2 class="post-title">366年!</h2>
     </a>
