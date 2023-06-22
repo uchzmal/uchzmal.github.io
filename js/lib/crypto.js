@@ -1,1 +1,29 @@
-mixins.crypto={data:()=>({crypto:"",cryptoStatus:null}),watch:{crypto(t){let r=this.$refs.crypto,s=this.$refs.content,{encrypted:c,shasum:o}=r.dataset;try{let r=CryptoJS.AES.decrypt(c,t).toString(CryptoJS.enc.Utf8);CryptoJS.SHA256(r).toString()===o?(this.cryptoStatus=!0,s.innerHTML=r,this.render()):this.cryptoStatus=!1}catch{this.cryptoStatus=!1}}},computed:{cryptoClass(){return null===this.cryptoStatus?"":!0===this.cryptoStatus?"success":!1===this.cryptoStatus?"fail":void 0}}};
+mixins.crypto = {
+    data() {
+        return { crypto: "", cryptoStatus: null };
+    },
+    watch: {
+        crypto(value) {
+            let input = this.$refs.crypto,
+                content = this.$refs.content;
+            let { encrypted, shasum } = input.dataset;
+            try {
+                let decrypted = CryptoJS.AES.decrypt(encrypted, value).toString(CryptoJS.enc.Utf8);
+                if (CryptoJS.SHA256(decrypted).toString() === shasum) {
+                    this.cryptoStatus = true;
+                    content.innerHTML = decrypted;
+                    this.render();
+                } else this.cryptoStatus = false;
+            } catch {
+                this.cryptoStatus = false;
+            }
+        },
+    },
+    computed: {
+        cryptoClass() {
+            if (this.cryptoStatus === null) return "";
+            if (this.cryptoStatus === true) return "success";
+            if (this.cryptoStatus === false) return "fail";
+        },
+    },
+};
